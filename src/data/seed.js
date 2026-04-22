@@ -5,8 +5,8 @@ export const seedInvoices = [
     paymentDue: "2026-05-18",
     description: "Brand identity refresh",
     paymentTerms: 30,
-    clientName: "Jensen Huang",
-    clientEmail: "jensen@example.com",
+    clientName: "Umaru idris",
+    clientEmail: "umaru@example.com",
     status: "paid",
     senderAddress: {
       street: "19 Union Terrace",
@@ -31,8 +31,8 @@ export const seedInvoices = [
     paymentDue: "2026-05-08",
     description: "Website redesign",
     paymentTerms: 30,
-    clientName: "Alex Grim",
-    clientEmail: "alexgrim@mail.com",
+    clientName: "Yahya Abdul",
+    clientEmail: "yahya@example.com",
     status: "pending",
     senderAddress: {
       street: "12 Admiralty Way",
@@ -41,10 +41,10 @@ export const seedInvoices = [
       country: "Nigeria",
     },
     clientAddress: {
-      street: "84 Church Way",
+      street: "84 kano road",
       city: "Bradford",
       postCode: "BD1 9PB",
-      country: "United Kingdom",
+      country: "Kano Nigeria",
     },
     items: [
       { id: "XM9141-1", name: "Banner Design", quantity: 1, price: 156 },
