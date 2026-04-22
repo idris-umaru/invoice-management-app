@@ -23,7 +23,10 @@ function getInitialInvoices() {
   if (!storedInvoices) return seedInvoices;
 
   try {
-    return JSON.parse(storedInvoices);
+    const parsedInvoices = JSON.parse(storedInvoices);
+    const existingIds = new Set(parsedInvoices.map((invoice) => invoice.id));
+    const missingSeedInvoices = seedInvoices.filter((invoice) => !existingIds.has(invoice.id));
+    return [...parsedInvoices, ...missingSeedInvoices];
   } catch {
     return seedInvoices;
   }
